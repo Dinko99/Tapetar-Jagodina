@@ -1,0 +1,58 @@
+.sidebar {
+  background-color: var(--clr-black);
+  height: 100vh;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  padding-top: 40px;
+
+  a {
+    padding-left: 15px;
+    text-decoration: none;
+    color: var(--clr-white);
+    font-weight: 600;
+    transition: var(--transition-default);
+
+    &:hover {
+      background-color: var(--clr-white);
+      color: var(--clr-black);
+    }
+  }
+}
+
+.overlay {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.close-button {
+  font-size: 30px;
+  color: var(--clr-red);
+  position: absolute;
+  bottom: 38px;
+  right: 16px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 681px) {
+  .sidebar,
+  .close-button,
+  .overlay {
+    display: none;
+  }
+}

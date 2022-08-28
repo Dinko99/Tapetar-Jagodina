@@ -13,6 +13,8 @@
   //Colors
   --clr-mate-black: #28282b;
   --clr-white: #fff;
+  --clr-black: #000;
+  --clr-red: #f13030;
 
   //Transition
   --transition-default: 0.1s all linear;
@@ -21,4 +23,9 @@
 body {
   font-family: var(--ff-open-sans);
   color: var(--clr-mate-black);
+  position: relative;
+}
+
+.none {
+  display: none;
 }

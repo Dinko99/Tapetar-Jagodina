@@ -9,24 +9,51 @@
     display: flex;
     justify-content: space-between;
 
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+
     a {
       color: var(--clr-white);
       text-decoration: none;
       font-size: 14px;
     }
 
-    .social-icons {
-      display: flex;
-      gap: 15px;
-    }
-
     .personal-info {
       display: flex;
-      gap: 15px;
+      gap: 25px;
 
       a {
-        cursor: default;
+        cursor: pointer;
+
+        &:after {
+          display: block;
+          content: '';
+          border-bottom: 1px solid var(--clr-mate-black);
+          transition: var(--transition-default);
+        }
+
+        &:hover:after {
+          border-bottom: 1px solid var(--clr-white);
+        }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .info-menu {
+    .info-menu-inner-wrapper {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .info-menu {
+    .info-menu-inner-wrapper {
+      width: 98%;
     }
   }
 }
