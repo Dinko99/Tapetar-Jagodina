@@ -9,13 +9,14 @@ const InfoMenu = () => {
           <a
             href='https://www.facebook.com/profile.php?id=100061266281596'
             target='_blank'
+            rel='noreferrer'
           >
             <FaFacebookF />
           </a>
           <a href='#'>
             <FaInstagram />
           </a>
-          <a href=''>
+          <a href='#'>
             <FaMapMarkerAlt />
           </a>
         </div>

@@ -1,11 +1,5 @@
-import InfoMenu from '../components/InfoMenu';
-
 const Home = () => {
-  return (
-    <>
-      <InfoMenu />
-    </>
-  );
+  return <div>hello</div>;
 };
 
 export default Home;
