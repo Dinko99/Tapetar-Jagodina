@@ -1,7 +1,8 @@
 import './App.scss';
+import Home from './pages/Home';
 
 function App() {
-  return <h1>Start</h1>;
+  return <Home></Home>;
 }
 
 export default App;

@@ -1,0 +1,32 @@
+.info-menu {
+  background-color: var(--clr-mate-black);
+  padding: 8px 0;
+
+  .info-menu-inner-wrapper {
+    width: 65%;
+    margin-inline: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: var(--clr-white);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .personal-info {
+      display: flex;
+      gap: 15px;
+
+      a {
+        cursor: default;
+      }
+    }
+  }
+}

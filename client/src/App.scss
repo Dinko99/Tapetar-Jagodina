@@ -1,13 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+:root {
+  //Fonts
+  --ff-open-sans: 'Open Sans', sans-serif;
+
+  //Colors
+  --clr-mate-black: #28282b;
+  --clr-white: #fff;
+
+  //Transition
+  --transition-default: 0.1s all linear;
+}
+
 body {
-  height: 100vh;
-  background-image: url('./assets/images/bc1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom right;
+  font-family: var(--ff-open-sans);
 }
