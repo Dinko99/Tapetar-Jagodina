@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
   box-sizing: border-box;
@@ -8,13 +8,14 @@
 
 :root {
   //Fonts
-  --ff-open-sans: 'Open Sans', sans-serif;
+  --ff-primary: 'Poppins', sans-serif;
 
   //Colors
   --clr-mate-black: #28282b;
   --clr-white: #fff;
   --clr-black: #04091e;
   --clr-red: #f13030;
+  --clr-yellow: #be8d04;
 
   //Transition
   --transition-default: 0.1s all linear;
@@ -22,7 +23,7 @@
 }
 
 body {
-  font-family: var(--ff-open-sans);
+  font-family: var(--ff-primary);
   color: var(--clr-mate-black);
   position: relative;
 }

@@ -11,7 +11,7 @@
 
     .social-icons {
       display: flex;
-      gap: 15px;
+      gap: 25px;
     }
 
     a {
@@ -54,6 +54,19 @@
   .info-menu {
     .info-menu-inner-wrapper {
       width: 98%;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .info-menu {
+    .info-menu-inner-wrapper {
+      width: 95%;
+      .personal-info {
+        a:last-child {
+          display: none;
+        }
+      }
     }
   }
 }

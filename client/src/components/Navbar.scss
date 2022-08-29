@@ -1,7 +1,7 @@
 .navbar {
   background-color: var(--clr-white);
   padding: 12px 0;
-  border-bottom: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   .navbar-inner-wrapper {
     width: 75%;
@@ -84,6 +84,9 @@
       }
       .hamburger {
         display: block;
+      }
+      .title {
+        margin-left: 5px;
       }
     }
   }

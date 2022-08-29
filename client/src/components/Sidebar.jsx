@@ -16,7 +16,7 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
         className={isSidebarOpen ? 'overlay' : 'overlay none'}
         onClick={closeSidebar}
       ></div>
-      <div className={isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}>
+      <aside className={isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}>
         <Link to='/'>
           <FaHome />
           Naslovna
@@ -36,7 +36,7 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
           <FaAddressCard />
           Kontakt
         </Link>
-      </div>
+      </aside>
       <AiOutlineClose
         className={isSidebarOpen ? 'close-button' : 'close-button none'}
         onClick={closeSidebar}
