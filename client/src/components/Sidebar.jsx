@@ -1,25 +1,49 @@
 import { Link } from 'react-router-dom';
 import './Sidebar.scss';
 import { AiOutlineClose } from 'react-icons/ai';
+import {
+  FaHome,
+  FaAddressCard,
+  FaImage,
+  FaServer,
+  FaInfoCircle,
+} from 'react-icons/fa';
 
 const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
-  if (!isSidebarOpen) {
-    return null;
-  } else {
-    return (
-      <>
-        <div className='overlay' onClick={closeSidebar}></div>
-        <div className='sidebar'>
-          <Link to='/'>Naslovna</Link>
-          <Link to='/gallery'>Galerija</Link>
-          <Link to='/about'>O nama</Link>
-          <Link to='/services'>Usluge</Link>
-          <Link to='/contact'>Kontakt</Link>
-        </div>
-        <AiOutlineClose className='close-button' onClick={closeSidebar} />
-      </>
-    );
-  }
+  return (
+    <>
+      <div
+        className={isSidebarOpen ? 'overlay' : 'overlay none'}
+        onClick={closeSidebar}
+      ></div>
+      <div className={isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}>
+        <Link to='/'>
+          <FaHome />
+          Naslovna
+        </Link>
+        <Link to='/gallery'>
+          <FaImage />
+          Galerija
+        </Link>
+        <Link to='/about'>
+          <FaInfoCircle />O nama
+        </Link>
+        <Link to='/services'>
+          <FaServer />
+          Usluge
+        </Link>
+        <Link to='/contact'>
+          <FaAddressCard />
+          Kontakt
+        </Link>
+      </div>
+      <AiOutlineClose
+        className={isSidebarOpen ? 'close-button' : 'close-button none'}
+        onClick={closeSidebar}
+      />
+    </>
+  );
+  // }
 };
 
 export default Sidebar;

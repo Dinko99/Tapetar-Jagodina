@@ -13,11 +13,12 @@
   //Colors
   --clr-mate-black: #28282b;
   --clr-white: #fff;
-  --clr-black: #000;
+  --clr-black: #04091e;
   --clr-red: #f13030;
 
   //Transition
   --transition-default: 0.1s all linear;
+  --transition-ease: 0.4s all ease;
 }
 
 body {
