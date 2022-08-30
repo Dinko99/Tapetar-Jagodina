@@ -15,7 +15,12 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
       <div
         className={isSidebarOpen ? 'overlay' : 'overlay none'}
         onClick={closeSidebar}
-      ></div>
+      >
+        <AiOutlineClose
+          className={isSidebarOpen ? 'close-button' : 'close-button none'}
+          onClick={closeSidebar}
+        />
+      </div>
       <aside className={isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}>
         <Link to='/'>
           <FaHome />
@@ -37,10 +42,6 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
           Kontakt
         </Link>
       </aside>
-      <AiOutlineClose
-        className={isSidebarOpen ? 'close-button' : 'close-button none'}
-        onClick={closeSidebar}
-      />
     </>
   );
   // }
