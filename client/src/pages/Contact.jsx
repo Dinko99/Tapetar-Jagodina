@@ -1,10 +1,12 @@
 import './Contact.scss';
 import { FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import { GoMail } from 'react-icons/go';
+import Map from '../components/Map';
 
 const Contact = () => {
   return (
     <div className='contact'>
+      <Map />
       <div className='contact-info'>
         <div className='info-box'>
           <div className='icon-div'>
@@ -35,7 +37,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className='map'></div>
     </div>
   );
 };
