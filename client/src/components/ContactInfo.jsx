@@ -11,7 +11,7 @@ const ContactInfo = () => {
         </div>
         <div className='info'>
           <h4>Jagodina, Srbija</h4>
-          <p>22/3, Kragujevacki Oktobar</p>
+          <p>22/3, Kragujevački Oktobar</p>
         </div>
       </div>
 
@@ -30,7 +30,7 @@ const ContactInfo = () => {
         </div>
         <div className='info'>
           <h4>Slavisa_diki@gmail.com</h4>
-          <p>Posaljite vas upit</p>
+          <p>Pošaljite vaš upit</p>
         </div>
       </div>
     </div>

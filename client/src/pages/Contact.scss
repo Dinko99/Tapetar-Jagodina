@@ -4,6 +4,16 @@
   margin-inline: auto;
 
   .contact-box {
-    margin-top: 8rem;
+    margin-top: 4rem;
+    display: flex;
+    gap: 6vw;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .contact {
+    .contact-box {
+      flex-direction: column;
+    }
   }
 }
