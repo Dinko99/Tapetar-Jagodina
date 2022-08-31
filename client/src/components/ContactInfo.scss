@@ -1,0 +1,25 @@
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  .info-box {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    h4 {
+      color: var(--clr-light-black);
+    }
+
+    p {
+      color: var(--clr-gray);
+      font-size: 14px;
+    }
+
+    .icon {
+      color: #fab700;
+      font-size: 30px;
+    }
+  }
+}
