@@ -1,15 +1,48 @@
 import './ContactForm.scss';
+import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert('Uspešno ste poslali poruku');
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
-    <form>
+    <form onSubmit={sendEmail}>
       <div className='input-container'>
-        <input type='text' placeholder='Upišite ime' />
-        <input type='text' placeholder='Upišite broj telefona' />
-        <input type='email' placeholder='Upišite email adresu' />
+        <input type='text' name='name' placeholder='Upišite ime' />
+        <input type='text' name='phone' placeholder='Upišite broj telefona' />
+        <input
+          required
+          type='email'
+          name='email'
+          placeholder='Upišite email adresu'
+        />
       </div>
 
-      <textarea cols='30' rows='10' placeholder='Pošaljite poruku '></textarea>
+      <textarea
+        cols='30'
+        rows='10'
+        name='message'
+        placeholder='Pošaljite poruku '
+      ></textarea>
       <button className='submit'>Pošaljite poruku</button>
     </form>
   );

@@ -29,7 +29,7 @@ const ContactInfo = () => {
           <GoMail className='icon' />
         </div>
         <div className='info'>
-          <h4>Slavisa_diki@gmail.com</h4>
+          <h4>Tapetar035@gmail.com</h4>
           <p>Pošaljite vaš upit</p>
         </div>
       </div>
