@@ -14,7 +14,7 @@ const HomeInfo = () => {
         </p>
       </div>
       <div className='home-info-box'>
-        <AiFillSchedule />
+        <AiFillEuroCircle />
         <h1>Najbolje Cene</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ullam
@@ -22,7 +22,7 @@ const HomeInfo = () => {
         </p>
       </div>
       <div className='home-info-box'>
-        <AiFillEuroCircle />
+        <AiFillSchedule />
         <h1>Dogovoreni Rokovi</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ullam

@@ -40,6 +40,7 @@ const ContactForm = () => {
       <textarea
         cols='30'
         rows='10'
+        required
         name='message'
         placeholder='Pošaljite poruku '
       ></textarea>
