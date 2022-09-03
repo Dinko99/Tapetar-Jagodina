@@ -21,9 +21,14 @@
     }
 
     p {
+      min-width: 30ch;
       max-width: 60ch;
       font-size: 14px;
       color: var(--clr-mate-black);
+
+      a {
+        color: var(--clr-orange);
+      }
     }
   }
 }

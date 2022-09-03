@@ -28,4 +28,26 @@ footer {
       }
     }
   }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  footer {
+    .footer-menu {
+      gap: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 365px) {
+  footer {
+    .footer-menu {
+      a {
+        font-size: 13px;
+      }
+    }
+  }
 }
