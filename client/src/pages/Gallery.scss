@@ -1,0 +1,25 @@
+.gallery {
+  margin-top: 5rem;
+  margin-inline: auto;
+  width: 75%;
+  column-count: 4;
+  column-width: 25%;
+  padding: 0 12px;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .gallery {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallery {
+    column-count: 2;
+    column-width: 50%;
+  }
+}
