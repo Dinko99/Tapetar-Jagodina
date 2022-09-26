@@ -5,8 +5,8 @@ import Marker from './Marker';
 export default function Map() {
   const defaultProps = {
     center: {
-      lat: 43.9788232902467,
-      lng: 21.249146411253225,
+      lat: 43.978668,
+      lng: 21.248571,
     },
     zoom: 16,
   };
@@ -106,7 +106,7 @@ export default function Map() {
           ],
         }}
       >
-        <Marker lat='43.9788232902467' lng='21.249146411253225' />
+        <Marker lat='43.978668' lng='21.248571' />
       </GoogleMapReact>
     </div>
   );

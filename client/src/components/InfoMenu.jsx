@@ -26,9 +26,7 @@ const InfoMenu = () => {
         </div>
         <div className='personal-info'>
           <a href='tel:+381603229567'>+381 603 229 567</a>
-          <a href='mailto:tapetar035@gmail.com?body=My custom mail body'>
-            tapetar035@gmail.com
-          </a>
+          <a href='#'>tapetar035@gmail.com</a>
         </div>
       </div>
     </nav>
